@@ -10,7 +10,7 @@ pipeline {
     stage('Log in & push to DockerHub') {
       steps {
         sh 'sudo docker login'
-        sh 'sudo docker push lisandrodv27?flask-app:1.0'
+        sh 'sudo docker push lisandrodv27/flask-app:1.0'
       }
     }
     
