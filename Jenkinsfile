@@ -17,6 +17,7 @@ pipeline {
     stage('Deploy in other VM') {
       steps {
         sh 'chmod +x deploy.sh'
+        sh './deploy.sh'
       }
     }
   }
